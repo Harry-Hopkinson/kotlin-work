@@ -1,5 +1,6 @@
 product: jvm/app
 
+# The $libs tells the build system that it needs to look inside the library catalogue for dependencies.
 dependencies:
   - $libs.datetime.jvm
   - $libs.mordant

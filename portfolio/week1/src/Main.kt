@@ -10,11 +10,12 @@ fun main(args: Array<String>) {
         exitProcess(1);
     }
 
-    val a = args[0].toDouble();
-    val b = args[1].toDouble();
-    val c = args[2].toDouble();
+    val a: Double = args[0].toDouble();
+    val b: Double = args[1].toDouble();
+    val c: Double = args[2].toDouble();
 
-    val s = 0.5 * (a + b + c);
-    val area = sqrt( s * (s - a) * (s - b) * (s - c) );
-    println("Area = " + area);
+    val s: Double = 0.5 * (a + b + c);
+    val area: Double = sqrt(s * (s - a) * (s - b) * (s - c));
+
+    println("Area = %.5f".format(area));
 }

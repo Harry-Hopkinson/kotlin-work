@@ -9,7 +9,7 @@ fun main() {
     val term = Terminal(AnsiLevel.TRUECOLOR)
 
     val helloStyle = italic + underline + yellow
-    term.println(helloStyle("HELLO WORLD!"))
+    term.println(helloStyle("HELLO EVERYONE!"))
 
     val date = today()
     val dateStyle = bold + green

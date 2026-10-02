@@ -9,5 +9,5 @@ fun main(args: Array<String>) {
     }
 
     val number = args[0].toInt()
-    println(number * number)
+    println("${number} * ${number} = ${number * number}");
 }

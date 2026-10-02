@@ -8,10 +8,10 @@ fun main() {
     val height = 1.78f;
     val root2 = Math.sqrt(2.0);
 
-    println("myAge type -> " + myAge::class);
-    println("universeAge type -> " + universeAge::class);
-    println("status type -> " + status::class);
-    println("name type -> " + name::class);
-    println("height type -> " + height::class);
-    println("root2 type -> " + root2::class);
+    println("myAge type -> ${myAge::class}");
+    println("universeAge type -> ${universeAge::class}");
+    println("status type -> ${status::class}");
+    println("name type -> ${name::class}");
+    println("height type -> ${height::class}");
+    println("root2 type -> ${root2::class}");
 }

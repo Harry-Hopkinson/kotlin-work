@@ -13,3 +13,11 @@ Run the demo of the good approach with
     ./kotlin run -m good 20
 
 Compare the execution times that are displayed.
+
+| Bad | Good |
+| :--- | :--- |
+| 3.025833ms | 253.833us |
+| 2.877167ms | 346.417us |
+| 2.853417ms | 258.583us |
+| 2.863958ms | 270.583us |
+| 3.020167ms | 263.5us |

@@ -1,4 +1,5 @@
-// Task 5.1.2: rollDie() function
+// Task 5.3.1: rollDie() function
+
 import kotlin.random.Random
 
 fun rollDie(sides: Int = 6) {

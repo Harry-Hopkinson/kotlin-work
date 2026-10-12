@@ -17,12 +17,12 @@ fun main() {
     // With this approach, there is no longer a need to specify element type or array size:
     // type inference is used to determine the former, and arguments are simply counted to determine the latter.
 
-    val numbers = intArrayOf(9, 6, 3, 2)
+    val numbers = intArrayOf(9, 6, 3, 2);
 
-    val cls = numbers::class
+    val cls = numbers::class;
 
-    println(cls.qualifiedName)
-    println(cls.java)
+    println(cls.qualifiedName);
+    println(cls.java);
 
     // When you need an array of ‘primitives’ (numbers, characters or booleans), it is more efficient to use the dedicated classes
     // that Kotlin provides for these types, rather than the generic Array class.

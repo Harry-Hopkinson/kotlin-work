@@ -3,6 +3,8 @@ fun main() {
     val numberList = List<Float>(100) { 0.0f };
     val greetings = List<String>(5) { "Hello" };
 
+    // no more efficient type of primitives like arrays.
+    // so no intList() for example.
     val names = listOf("Nine", "Three", "Six", "Two");
     val numbers = listOf(9, 3, 6, 2, 8, 5);
     

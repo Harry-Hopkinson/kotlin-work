@@ -10,17 +10,13 @@ fun main() {
         val result = numerator / denominator
         val remainder = numerator % denominator
         println("Result = $result remainder $remainder")
-    }
-    catch (error: NumberFormatException) {
+    } catch (error: NumberFormatException) {
         println("You didn't enter a valid number")
-    }
-    catch (error: IllegalArgumentException) {
+    } catch (error: IllegalArgumentException) {
         println("Illegal argument")
-    }
-    catch (error: Exception) {
-        println("Some sort of error occurred")
-    }
-    catch (error: ArithmeticException) {
+    } catch (error: ArithmeticException) {
         println("You tried to divide by zero")
+    } catch (error: Exception) {
+        println("Some sort of error occurred")
     }
 }

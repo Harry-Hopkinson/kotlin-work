@@ -16,3 +16,11 @@ Run the application with
 (Use `.\kotlin.bat` if running this on a Windows system.)
 
 You will see timings displayed for the two operations.
+
+| Without sequence | With sequence |
+| :--- | :--- |
+| 51.022166ms | 21.315708ms |
+| 48.622875ms | 20.779125ms |
+| 53.706292ms | 21.253333ms |
+| 49.266500ms | 18.028ms |
+| 47.059833ms | 22.864875ms |

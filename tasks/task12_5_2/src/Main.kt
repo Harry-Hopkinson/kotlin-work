@@ -1,1 +1,7 @@
-// Task 12.5.2: demo program for class with custom getter
+import kotlinx.datetime.LocalDate
+
+fun main() {
+    val person = Person("Harry Hopkinson", LocalDate(2006, 9, 3));
+
+    println(person.name);
+}

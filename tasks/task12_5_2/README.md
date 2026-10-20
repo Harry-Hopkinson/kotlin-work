@@ -1,24 +1,23 @@
-# Task 12.5.2
+# Task 12.5.1
 
-1. Edit `Person.kt`. Modify the definition of `Person` to look like this:
+1. Examine `Person.kt`. This file contains an implementation of the `Person`
+   class seen previously.
 
-   ```kotlin
-   class Person(_name: String, val birth: LocalDate) {
+2. Compile `Person.kt` with
 
-      var isMarried = false
+       ./kotlin build
 
-      var name = _name
-          get() {
-              return field.uppercase()
-          }
-   }
-   ```
+3. cd into this directory:
 
-2. Edit `Main.kt`. Add a `main()` function that creates a `Person` object
-   and then prints that person's name.
+       build/artifacts/CompiledJvmArtifact/task12_5_1jvm/kotlin-output/
 
-3. Compile and run the program, with
+   You should see a file named `Person.class`, containing the Java bytecode
+   representation of the class.
 
-       ./kotlin run
+4. Run the Java class disassembler tool on the class, like so:
 
-   You should see the name printed in uppercase.
+       javap -p Person
+
+   Study the output carefully.
+
+See the Programming Guide for further discussion of this task.

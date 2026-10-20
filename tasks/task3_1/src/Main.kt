@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
         println("Error: You must pass 2 command line arguments...");
         exitProcess(1);
     }
-    
+
     println(args[0]);
     println(args[1]);
 }

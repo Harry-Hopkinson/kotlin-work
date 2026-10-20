@@ -11,6 +11,6 @@ fun main() {
     println("Last Non Blank: ${lastNonBlank}");
 
     val numList = listOf(1, 4, 7, 2, 9, 3, 8);
-    val squares = numList.filter{ it % 2 != 0 }.map {it * it };
+    val squares = numList.filter { it % 2 != 0 }.map { it * it };
     println(squares);
 }

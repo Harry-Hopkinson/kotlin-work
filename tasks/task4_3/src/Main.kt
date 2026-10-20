@@ -14,10 +14,10 @@ fun main(args: Array<String>) {
     println("Average of three marks: ${averageMark}");
 
     val grade = when (averageMark) {
-        in 0..39   -> "Fail"
-        in 40..69  -> "Pass"
+        in 0..39 -> "Fail"
+        in 40..69 -> "Pass"
         in 70..100 -> "Distinction"
-        else       -> "?"
+        else -> "?"
     };
     println("Grade: ${grade}");
 }

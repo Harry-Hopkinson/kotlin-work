@@ -7,7 +7,8 @@ fun main() {
     // Here, numbers is created as an array of 100 Float values, each equal to 0.0
     // And greetings is created as an array of 5 strings, all "Hello".
 
-    val randomNumbers = Array<Float>(10) { Random.nextFloat() }; // You can use lambda expressions within the {}, for example Random.nextFloat()
+    val randomNumbers =
+        Array<Float>(10) { Random.nextFloat() }; // You can use lambda expressions within the {}, for example Random.nextFloat()
     for (number in randomNumbers) {
         println(number);
     }

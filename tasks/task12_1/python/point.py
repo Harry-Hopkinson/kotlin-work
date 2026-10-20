@@ -1,5 +1,5 @@
 # Task 12.1: Point class
-from math import hypot, sqrt 
+from math import hypot, sqrt
 
 class Point:
     def __init__(self, x, y):

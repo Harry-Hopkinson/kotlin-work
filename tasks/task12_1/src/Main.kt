@@ -1,7 +1,7 @@
 // Task 12.1: program that uses a Point object
 fun main() {
     val p = Point(10.0, 15.0);
-    
+
     println(p.x);
     println(p.y);
 

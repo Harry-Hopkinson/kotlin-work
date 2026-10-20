@@ -3,7 +3,7 @@
 import kotlin.io.path.Path
 import kotlin.io.path.forEachLine
 
-typealias Record = Pair<String,Double>
+typealias Record = Pair<String, Double>
 
 fun fetchData(filename: String): List<Record> {
     val data = mutableListOf<Record>()

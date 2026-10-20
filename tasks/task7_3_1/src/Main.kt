@@ -7,7 +7,7 @@ fun main() {
     // so no intList() for example.
     val names = listOf("Nine", "Three", "Six", "Two");
     val numbers = listOf(9, 3, 6, 2, 8, 5);
-    
+
     println(numbers);
     println(numbers[0]);
     // println(numbers[10]); will give error as index 10 out of bounds for list of length 6
@@ -16,7 +16,7 @@ fun main() {
     println(numbers.last());
 
     // To add a new value, remove values or replace values. You have to specify the list as mutable.
-    val mutableGreetings = MutableList<String>(5) { "Hello "};
+    val mutableGreetings = MutableList<String>(5) { "Hello " };
     mutableGreetings[0] = "Hi";
     println(mutableGreetings);
 

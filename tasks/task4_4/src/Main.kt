@@ -6,7 +6,7 @@ import com.github.ajalt.mordant.rendering.TextColors.*
 import com.github.ajalt.mordant.table.table
 import com.github.ajalt.mordant.terminal.Terminal
 
-fun toFarenheit(temp: Float) : Float {
+fun toFarenheit(temp: Float): Float {
     return (temp * 1.8f) + 32.0f;
 }
 
@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
     val initTemperature = args[0].toFloat();
     val maxTemperature = args[1].toFloat();
     val temperatureIncrement = args[2].toFloat();
-    
+
     val t = Terminal();
     var temperature = initTemperature;
 
@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
 
     t.println(table {
         header {
-            style = brightRed 
+            style = brightRed
             row("Celcius Temperature (°C)", "Farenheit Temperature (°F)")
         }
         body {
@@ -41,13 +41,13 @@ fun main(args: Array<String>) {
                 style = brightGreen
             }
 
-           while (temperature <= maxTemperature) {
-            row (
-                temperature,
-                "%.1f".format(toFarenheit(temperature)),
-            )
-            temperature += temperatureIncrement;
-           }
+            while (temperature <= maxTemperature) {
+                row(
+                    temperature,
+                    "%.1f".format(toFarenheit(temperature)),
+                )
+                temperature += temperatureIncrement;
+            }
         }
     });
 }
